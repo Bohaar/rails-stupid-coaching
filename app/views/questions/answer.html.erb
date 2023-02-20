@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Coaching Answer</h1>
+
+  <h5>I am going to work</h5>
+  <p> - You</p>
+  <% if @question == "I am going to work" %>
+  <h5>"Great!"</h5>
+  <p> - Coach</p>
+
+  <% elsif @question.end_with?("?") %>
+  <h5> "Silly question, get dressed and go to work!" </h5>
+  <% else %>
+  <h5>I don't care, get dressed and go to work!</h5>
+  <% end %>
+  </p>
+  <%= link_to "Ask a new question", "/ask" %>
+</div>
+
+<%# <h1> <%= @question %>
+
+
+<%# <h1>Silly question son..</h1> %>
+<%# <p> - Coach</p> %>
